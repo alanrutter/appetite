@@ -1,7 +1,8 @@
 class VenuesController < ApplicationController
 
 def index
-	@venues= Venue.all.order
+	@test = "testing"
+	@venues= Venue.all
 end
 
 def create
