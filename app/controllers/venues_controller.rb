@@ -5,6 +5,10 @@ def index
 	@venues= Venue.all
 end
 
+	def new
+		@venues= Venue.new
+	end
+
 def create
 end
 
