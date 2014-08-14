@@ -1,9 +1,14 @@
-<%= @test %>
-<section id=“map”></section>
-<%= @venues.each do |v| %>
-  <%= v.name %>
-  <%= v.address %>
-  <%= v.latitude %>
-  <%= v.longitude %>
+<ul>
+<% @venues.each do |v| %>
+
+  <li>
+  	<p><%= v.name %></p>
+ 	<p><%= v.address %></p>
+ </li>
 
 <% end %>
+</ul>
+
+<section id="map"></section>
+
+<%= link_to "Submit new", new_venue_path, class: 'button' %>
